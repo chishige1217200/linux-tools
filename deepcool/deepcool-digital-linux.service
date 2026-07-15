@@ -1,0 +1,13 @@
+[Unit]
+Description=DeepCool Digital Linux Service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/deepcool/deepcool-digital-linux
+KillSignal=SIGINT
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
