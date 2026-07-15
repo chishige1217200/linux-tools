@@ -1,0 +1,12 @@
+[Unit]
+Description=Unload Wacom Driver Service
+After=locao-fs.target
+
+[Service]
+User=root
+ExecStart=rmmod wacom
+Restart=no
+type=simple
+
+[Install]
+WantedBy=multi-user.target
