@@ -1,0 +1,11 @@
+[Unit]
+Description=Nvidia Fan Controll Set Service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=nvidia-settings --display :0 -a GPUFanControlState=1 -a GPUTargetFanSpeed=60
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Nvidia Power Limit Set Service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=nvidia-smi -pl 250
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
