@@ -1,5 +1,5 @@
 [Unit]
-Description=Nvidia Fan Controll Set Service
+Description=Nvidia Fan Control Set Service
 
 [Service]
 Type=oneshot
